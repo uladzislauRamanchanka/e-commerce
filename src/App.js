@@ -1,10 +1,13 @@
-import React from 'react'
-import HomePage from './pages/homepage/homepage.component'
-import './App.css'
+import React from "react";
+import HomePage from "./pages/homepage/homepage.component";
+import { Router, Switch } from "react-router-dom";
+import "./App.css";
 function App() {
   return (
     <div>
-      <HomePage/>
+      <Switch>
+        <Router exact path="/" component={HomePage} />
+      </Switch>
     </div>
   );
 }
